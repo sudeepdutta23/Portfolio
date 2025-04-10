@@ -18,9 +18,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="90"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="90"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>90%</h3>
@@ -33,9 +33,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="85"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="85"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>85%</h3>
@@ -48,9 +48,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="97"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="97"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>97%</h3>
@@ -63,9 +63,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="90"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="90"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>90%</h3>
@@ -82,9 +82,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="90"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="90"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>90%</h3>
@@ -97,9 +97,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="85"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="85"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>85%</h3>
@@ -112,9 +112,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="97"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="97"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>97%</h3>
@@ -127,9 +127,9 @@ export const Skills = () => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="90"
-                        aria-valuemin="10"
-                        aria-valuemax="100"
+                        // aria-valuenow="90"
+                        // aria-valuemin="10"
+                        // aria-valuemax="100"
                       ></div>
                     </div>
                     <h3>90%</h3>
