@@ -1,23 +1,44 @@
-import React from 'react'
+import React from "react";
 
 export const Footer = () => {
   return (
-    <footer id="footer-copyright" className="footer-copyright">
-			<div className="container">
-				<div className="hm-footer-copyright text-center">
-					<p>
-						&copy; copyright sudeep dutta. design and developed by <a href="#">sudeep dutta</a>
-					</p>
-				</div>
-			</div>
-
-			<div id="scroll-Top">
-				<div className="return-to-top">
-					<i className="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div>
-			
-        </footer>
-  )
-}
+    <section className="py-[60px] relative bg-[#f2f5fb] dark:bg-[#3f4453]">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+          <div>
+            <p className="text-muted dark:text-darkmuted text-base text-center md:text-left">
+              Developed with love by{" "}
+              <a
+                href="https://themeforest.net/user/marketify"
+                className="font-bold"
+              >
+                Marketify
+              </a>{" "}
+              © 2022
+            </p>
+          </div>
+          <div>
+            <ul className="flex items-center gap-10 justify-center md:justify-end text-base">
+              <li>
+                <a
+                  href="#"
+                  className="text-muted dark:text-darkmuted hover:text-custom duration-300"
+                >
+                  Terms & Condition{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted dark:text-darkmuted hover:text-custom duration-300"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

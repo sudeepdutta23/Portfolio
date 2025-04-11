@@ -1,13 +1,15 @@
-body {
-	margin: 0;
+@import "tailwindcss";
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 375px;
+    width: 100%;
 }
 
-.top-right-element {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* Add any other styles you need for your element */
-  /* background-color: lightblue; Example style */
-  /* padding: 10px; /* Example style */
-  /* border: 1px solid black; Example style */
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 375px;
+    width: 100%;
 }

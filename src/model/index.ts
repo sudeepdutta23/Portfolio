@@ -3,15 +3,15 @@ import { LINKS } from "@/interface";
 export const stylesheets: LINKS[] = [
     {
       id: 1,
-      href: "assets/css/font-awesome.min.css"
+      href: "assets/css/icon.css"
     },
     {
       id: 2,
-      href: "assets/css/flaticon.css"
+      href: "assets/css/magnific-popup.css"
     },
     {
       id: 3,
-      href: "assets/css/animate.css"
+      href: "assets/css/animate.min.css"
     },
     {
       id: 4,
@@ -19,65 +19,41 @@ export const stylesheets: LINKS[] = [
     },
     {
       id: 5,
-      href: "assets/css/owl.theme.default.min.css"
-    },
-    {
-      id: 6,
-      href: "assets/css/bootstrap.min.css"
-    },
-    {
-      id: 7,
-      href: "assets/css/bootsnav.css"
-    },
-    {
-      id: 8,
       href: "assets/css/style.css"
-    },
-    {
-      id: 9,
-      href: "assets/css/responsive.css"
     }
   ];
 
   export const scripts:LINKS[] = [
     {
       id: 1,
-      href: "assets/js/jquery.js"
+      href: "assets/js/jquery-3.6.2.min.js"
     },
     {
       id: 2,
-      href: "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      href: "assets/js/isotope.js"
     },
     {
       id: 3,
-      href: "assets/js/bootstrap.min.js"
+      href: "assets/js/jquery.magnific-popup.min.js"
     },
     {
       id: 4,
-      href: "assets/js/bootsnav.js"
-    },
-    {
-      id: 5,
-      href: "assets/js/jquery.sticky.js"
-    },
-    {
-      id: 6,
-      href: "assets/js/progressbar.js"
-    },
-    {
-      id: 7,
-      href: "assets/js/jquery.appear.js"
-    },
-    {
-      id: 8,
       href: "assets/js/owl.carousel.min.js"
     },
     {
-      id: 9,
-      href: "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      id: 5,
+      href: "assets/js/tilt.jquery.js"
     },
     {
-      id: 10,
+      id: 6,
+      href: "assets/js/wow.min.js"
+    },
+    {
+      id: 7,
       href: "assets/js/custom.js"
+    },
+    {
+      id: 8,
+      href: "assets/alpinejs%403.14.9/dist/cdn.min.js"
     }
   ];
