@@ -106,8 +106,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/1.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>
@@ -130,8 +130,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/4.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>
@@ -154,8 +154,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/2.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>
@@ -178,8 +178,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/5.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>
@@ -202,8 +202,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/3.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>
@@ -226,8 +226,8 @@ export const Portfolio = () => {
                       src="/assets/img/portfolio/6.jpg"
                       className="object-cover w-full h-full"
                       alt=""
-                      width={100}
-                      height={100}
+                      width={800}
+                      height={800}
                     />
                   </div>
                 </a>

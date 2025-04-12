@@ -58,7 +58,7 @@ export const StartHome = () => {
           <div className="order-1 lg:order-2">
             <div className="relative">
               <Image
-                src="/assets/img/slider/avatar.jpg"
+                src="/assets/img/slider/sudeep.png"
                 className="mx-auto max-w-[250px] lg:max-w-[400px] xl:max-w-[650px]"
                 alt=""
                 width={600}
