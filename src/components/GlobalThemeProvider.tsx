@@ -7,7 +7,7 @@ export const THEMES = {
   LIGHT: 'light',
 }
 
-export const ThemeContext = createContext();
+export const ThemeContext = createContext({});
 export const GlobalThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(THEMES.LIGHT);
 
