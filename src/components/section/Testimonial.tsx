@@ -19,7 +19,7 @@ export const Testimonial = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 mt-20 relative bg-cover bg-top">
+        <div className="bg-testimonials grid grid-cols-1 mt-20 relative bg-cover bg-top">
           <div id="owl-demo" className="owl-carousel">
             <div className="text-center max-w-[900px] mx-auto">
               <div className="mb-[35px]">

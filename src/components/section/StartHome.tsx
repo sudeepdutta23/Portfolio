@@ -1,10 +1,16 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../GlobalThemeProvider";
 
 export const StartHome = () => {
+  const { theme } = useContext(ThemeContext);
+  
   return (
     <section
-      className="bg-[url('/assets/img/slider/1.jpg')] flex items-center dark:bg-[url('/assets/img/slider/2.html')] bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header"
+      className={`${
+        theme === "dark" ? "bg-slider-two" : "bg-slider-one"
+      } flex items-center dark:bg-sliderTwo bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header`}
       id="home"
     >
       <div className="container">
@@ -13,19 +19,28 @@ export const StartHome = () => {
             <h3 className="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">
               Hello, I&apos;m
             </h3>
-            <h1 className="text-[42px] lg:text-[60px] xl:text-[85px] text-center lg:text-left mb-[11px] lg:mb-[18px] leading-[1.3] font-medium font-secondary">
+            <h1
+              className={`text-[42px] lg:text-[60px] xl:text-[85px] text-center lg:text-left mb-[11px] lg:mb-[18px] leading-[1.3] font-medium font-secondary ${
+                theme == "dark" && "text-white"
+              }`}
+            >
               Sudeep Dutta
             </h1>
             <p className="lg:mb-9 mb-[15px] text-lg lg:text-[19px] xl:text-[28px] text-center lg:text-left font-medium">
-              A <span className="text-[#1cbe59]">Interactive Systems Innovator</span> From{" "}
-              <span className="text-[#8067f0] dark:text-[#f0c45c]">
-                India
-              </span>
+              <span className={`${theme == "dark" && "text-white"}`}>A </span>
+              <span className="text-[#1cbe59]">
+                Interactive Systems Innovator
+              </span>{" "}
+              <span className={`${theme == "dark" && "text-white"}`}>From</span>{" "}
+              <span className="text-[#8067f0] dark:text-[#f0c45c]">India</span>
             </p>
-            <p className="lg:mb-[42px] text-muted dark:text-white mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
-              {/* I&apos;m creative designer based in New York, and I&apos;m very passionate
-              and dedicated to my work. */}
-              I&apos;m passionate about learning and adapting to new technologies.With a problem-solving mindset.
+            <p
+              className={`lg:mb-[42px] text-muted dark:text-white mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0 ${
+                theme == "dark" && "text-white"
+              }`}
+            >
+              I&apos;m passionate about learning and adapting to new
+              technologies.With a problem-solving mindset.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-[25px]">
               <a href="#about" className="btn-custom relative">
@@ -33,23 +48,42 @@ export const StartHome = () => {
               </a>
               <ul className="flex items-center gap-2">
                 <li>
-                  <a href="https://www.facebook.com/sudeepdutta23" target="_blank">
-                    <i className="icon-facebook-1"></i>
+                  <a
+                    href="https://www.facebook.com/sudeepdutta23"
+                    target="_blank"
+                  >
+                    <i
+                      className={`icon-facebook-1 ${
+                        theme == "dark" && "text-white"
+                      }`}
+                    ></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icon-twitter-1"></i>
+                    <i
+                      className={`icon-twitter-1 ${
+                        theme == "dark" && "text-white"
+                      }`}
+                    ></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icon-linkedin-1"></i>
+                    <i
+                      className={`icon-linkedin-1 ${
+                        theme == "dark" && "text-white"
+                      }`}
+                    ></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icon-behance"></i>
+                    <i
+                      className={`icon-behance ${
+                        theme == "dark" && "text-white"
+                      }`}
+                    ></i>
                   </a>
                 </li>
               </ul>
@@ -103,7 +137,13 @@ export const StartHome = () => {
             viewBox="0 0 247 390"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 1.5 }}
+            style={{
+              fillRule: "evenodd",
+              clipRule: "evenodd",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeMiterlimit: 1.5,
+            }}
           >
             <path
               id="wheel"

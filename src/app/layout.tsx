@@ -6,6 +6,7 @@ import { scripts, stylesheets } from "@/model";
 import { LINKS } from "@/interface";
 import Script from "next/script";
 import { Footer } from "@/components/Footer";
+import { GlobalThemeProvider } from "@/components/GlobalThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,12 +38,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased class="antialiased text-lg leading-[30px] font-primary text-dark dark:bg-semidark dark:text-white scrollbar-thumb-dark/25 scrollbar-track-dark/10 scrollbar-thin`}
       >
-        <div id="preloader">
+        <GlobalThemeProvider>
+          <div id="preloader">
             <div className="loader_line"></div>
-        </div>
-        <Header />
-        {children}
-        <Footer />
+          </div>
+          <Header />
+          {children}
+          <Footer />
+        </GlobalThemeProvider>
         {scripts.map((script: LINKS) => (
           <Script key={script.id} src={script.href} />
         ))}

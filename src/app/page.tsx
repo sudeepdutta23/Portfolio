@@ -10,22 +10,24 @@ import { StartHome } from "@/components/section/StartHome";
 import { StartServices } from "@/components/section/StartServices";
 import { Subscribe } from "@/components/section/Subscribe";
 import { Testimonial } from "@/components/section/Testimonial";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
-    <div>
-     <StartHome />
-     <Process />
-     <About />
-     <Portfolio />
-     <Skills />
-     <StartServices />
-     <Testimonial />
-     <Partners />
-     <Blogs />
-     <Subscribe />
-     <Contact />
-     <Map />
-    </div>
+    <>
+      <ThemeToggle />
+      <StartHome />
+      <Process />
+      <About />
+      <Portfolio />
+      <Skills />
+      <StartServices />
+      <Testimonial />
+      <Partners />
+      <Blogs />
+      <Subscribe />
+      <Contact />
+      <Map />
+    </>
   );
 }
