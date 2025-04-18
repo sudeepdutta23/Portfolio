@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext, THEMES } from "../GlobalThemeProvider";
 
 export const Contact = () => {
+  const { theme } = useContext(ThemeContext);
+
+  const isDark = theme === THEMES.DARK;
+  
   return (
     <section
       className="md:pt-[190px] pt-[123px] pb-[120px] md:pb-[200px] relative"
@@ -13,10 +19,10 @@ export const Contact = () => {
             <p className="text-custom text-[20px] md:text-2xl font-medium font-secondary">
               Contact Me
             </p>
-            <h3 className="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">
+            <h3 className={`md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5 ${isDark && "text-white"}`}>
               I Want To Hear From You
             </h3>
-            <p className="text-muted dark:text-darkmuted text-lg leading-[30px]">
+            <p className={`text-muted dark:text-darkmuted text-lg leading-[30px] ${isDark && "text-white"}`}>
               Please fill out the form on this section to contact with me. Or
               call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
             </p>
@@ -29,8 +35,8 @@ export const Contact = () => {
                 <i className="icon-location text-custom"></i>
               </div>
               <div>
-                <h5 className="md:text-[30px] text-[25px]">Address</h5>
-                <p className="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">
+                <h5 className={`md:text-[30px] text-[25px] ${isDark && "text-white"}`}>Address</h5>
+                <p className={`text-lg mt-1.5 text-muted dark:text-darkmuted leading-8 ${isDark && "text-white"}`}>
                   42, Dhirenpara, Itabhata, Guwahati, Assam.
                 </p>
               </div>
@@ -40,8 +46,8 @@ export const Contact = () => {
                 <i className="icon-mail-1 text-[#1cbe59]"></i>
               </div>
               <div>
-                <h5 className="md:text-[30px] text-[25px]">Email</h5>
-                <p className="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">
+                <h5 className={`md:text-[30px] text-[25px] ${isDark && "text-white"}`}>Email</h5>
+                <p className={`text-lg mt-1.5 text-muted dark:text-darkmuted leading-8 ${isDark && "text-white"}`}>
                   duttasudeep105@gmail.com
                 </p>
               </div>
@@ -51,8 +57,8 @@ export const Contact = () => {
                 <i className="icon-phone text-[#8067f0]"></i>
               </div>
               <div>
-                <h5 className="md:text-[30px] text-[25px]">Phone</h5>
-                <p className="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">
+                <h5 className={`md:text-[30px] text-[25px] ${isDark && "text-white"}`}>Phone</h5>
+                <p className={`text-lg mt-1.5 text-muted dark:text-darkmuted leading-8 ${isDark && "text-white"}`}>
                   +600 058 7566
                 </p>
               </div>
@@ -65,7 +71,7 @@ export const Contact = () => {
                   <label className="block">
                     <input
                       type="text"
-                      className="form-input"
+                      className={`form-input ${isDark && "text-white dark_Theme"}`}
                       placeholder="Your Name"
                       required
                     />
@@ -75,7 +81,7 @@ export const Contact = () => {
                   <label className="block">
                     <input
                       type="email"
-                      className="form-input"
+                      className={`form-input ${isDark && "text-white dark_Theme"}`}
                       placeholder="Your Email"
                       required
                     />
@@ -85,7 +91,7 @@ export const Contact = () => {
                   <label className="block">
                     <input
                       type="text"
-                      className="form-input"
+                      className={`form-input ${isDark && "text-white dark_Theme"}`}
                       placeholder="Your Phone"
                       required
                     />
@@ -95,7 +101,7 @@ export const Contact = () => {
                   <label className="block">
                     <input
                       type="text"
-                      className="form-input"
+                      className={`form-input ${isDark && "text-white dark_Theme"}`}
                       placeholder="Subject"
                       required
                     />
@@ -104,7 +110,7 @@ export const Contact = () => {
                 <div className="md:col-span-2">
                   <label className="block">
                     <textarea
-                      className="form-input h-auto"
+                      className={`form-input h-auto ${isDark && "text-white dark_Theme"}`}
                       rows={7}
                       placeholder="Write your message here"
                       required

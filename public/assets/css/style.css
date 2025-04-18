@@ -2629,6 +2629,10 @@ h1,
   background-image: url('../img/testimonials/bg-client-dark.png');
 }
 
+.bg-testimonials-dark{
+  background-image: url('../img/testimonials/bg-client-dark.png');
+}
+
 .dark .dark\:stroke-white{
   stroke: #ffffff;
 }

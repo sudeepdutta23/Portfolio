@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext, THEMES } from "../GlobalThemeProvider";
 
 export const Skills = () => {
+  const { theme } = useContext(ThemeContext);
+
+  const isDark = theme === THEMES.DARK;
+
   return (
     <section>
       <div className="container relative z-10">
@@ -11,12 +17,12 @@ export const Skills = () => {
               <p className="text-custom text-[20px] md:text-2xl font-medium font-secondary">
                 Design is Life
               </p>
-              <h3 className="md:text-[48px] text-[35px] leading-[1.25] mt-1.5">
+              <h3 className={`md:text-[48px] text-[35px] leading-[1.25] mt-1.5 ${isDark && "text-white"}`}>
                 I Develop Skills Regularly to Keep Me Update
               </h3>
             </div>
             <p
-              className="text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] wow fadeInUp"
+              className={`text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] wow fadeInUp ${isDark && "text-white"}`}
               data-wow-duration="1s"
             >
               Most common methods for designing websites that work well on
@@ -32,7 +38,7 @@ export const Skills = () => {
                 data-color="#f75023"
               >
                 <div className="mb-[9px] block">
-                  <span className="text-lg font-medium font-secondary inline-block">
+                  <span className={`text-lg font-medium font-secondary inline-block ${isDark && "text-white"}`}>
                     Reactjs/Nextjs
                   </span>
                   <span className="absolute right-[15%] text-custom">85%</span>
@@ -50,7 +56,7 @@ export const Skills = () => {
                 data-color="#f75023"
               >
                 <div className="mb-[9px] block">
-                  <span className="text-lg font-medium font-secondary inline-block">
+                  <span className={`text-lg font-medium font-secondary inline-block ${isDark && "text-white"}`}>
                     Nodejs
                   </span>
                   <span className="absolute right-[5%] text-custom">95%</span>
@@ -68,7 +74,7 @@ export const Skills = () => {
                 data-color="#f75023"
               >
                 <div className="mb-[9px] block">
-                  <span className="text-lg font-medium font-secondary inline-block">
+                  <span className={`text-lg font-medium font-secondary inline-block ${isDark && "text-white"}`}>
                     Mysql/Mongo
                   </span>
                   <span className="absolute right-[25%] text-custom">75%</span>

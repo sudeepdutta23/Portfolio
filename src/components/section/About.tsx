@@ -4,9 +4,9 @@ import React, { useContext } from "react";
 import { ThemeContext, THEMES } from "../GlobalThemeProvider";
 
 export const About = () => {
-   const { theme } = useContext(ThemeContext);
-  
-    const isDark = theme === THEMES.DARK;
+  const { theme } = useContext(ThemeContext);
+
+  const isDark = theme === THEMES.DARK;
 
   return (
     <section className="md:pt-[112px] pt-16 relative" id="about">
@@ -30,7 +30,11 @@ export const About = () => {
               />
             </div>
             <div className="top-[120px] -left-20 md:absolute">
-              <div className={`flex gap-[17px] items-center pt-[15px] pr-[30px] pb-[11px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg ${isDark && "text-white semi_dark_theme"}`}>
+              <div
+                className={`flex gap-[17px] items-center pt-[15px] pr-[30px] pb-[11px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg ${
+                  isDark && "text-white semi_dark_theme"
+                }`}
+              >
                 <h3 className="text-[50px] text-[#1cbe59]">
                   <span
                     className="dizme_tm_counter stop"
@@ -49,7 +53,11 @@ export const About = () => {
               </div>
             </div>
             <div className="bottom-[70px] -right-[30px] md:absolute">
-              <div className={`flex gap-[17px] items-center pt-[15px] pr-[30px] pb-[11px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg ${isDark && "text-white semi_dark_theme"}`}>
+              <div
+                className={`flex gap-[17px] items-center pt-[15px] pr-[30px] pb-[11px] pl-[26px] bg-white dark:bg-semilight shadow-[25px_0px_65px_rgba(54,32,152,0.11)] rounded-lg ${
+                  isDark && "text-white semi_dark_theme"
+                }`}
+              >
                 <h3 className="text-[50px] text-[#6e50f0] dark:text-[#f0c45c]">
                   <span
                     className="dizme_tm_counter stop"
@@ -78,14 +86,18 @@ export const About = () => {
                 I&apos;m a Fullstack Web & Mobile developer
               </p>
               <h3
-                className={`md:text-[48px] text-[35px] leading-[1.25] mt-1.5 wow fadeInUp ${isDark && "text-white"}`}
+                className={`md:text-[48px] text-[35px] leading-[1.25] mt-1.5 wow fadeInUp ${
+                  isDark && "text-white"
+                }`}
                 data-wow-duration="1s"
               >
                 I Can Design Any system You Want
               </h3>
             </div>
             <p
-              className={`text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px] wow fadeInUp ${isDark && "text-white"}`}
+              className={`text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px] wow fadeInUp ${
+                isDark && "text-white"
+              }`}
               data-wow-duration="1s"
             >
               Experienced Product Engineer and Full-Stack Developer,

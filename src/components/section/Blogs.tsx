@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext, THEMES } from "../GlobalThemeProvider";
 
 export const Blogs = () => {
+  const { theme } = useContext(ThemeContext);
+
+  const isDark = theme === THEMES.DARK;
+  
   return (
     <section
       className="md:pt-[185px] pt-[120px] pb-[100px] md:pb-[160px] relative"
@@ -13,7 +19,7 @@ export const Blogs = () => {
             <p className="text-custom text-[20px] md:text-2xl font-medium font-secondary">
               From My Blog
             </p>
-            <h3 className="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">
+            <h3 className={`md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5 ${isDark && "text-white"}`}>
               Our Recent Updates, Blog, Tips, Tricks & More
             </h3>
           </div>
@@ -40,7 +46,7 @@ export const Blogs = () => {
                   <a href="#">Web Development</a>
                 </p>
                 <h4 className="mt-1 leading-[1.4] text-[21px]">
-                  <a href="#" className="hover:text-custom">
+                  <a href="#" className={`hover:text-custom ${isDark && "text-white"}`}>
                     Jim Morisson Says when the musics over turn off the light
                   </a>
                 </h4>
@@ -72,7 +78,7 @@ export const Blogs = () => {
                   <a href="#">Branding</a>
                 </p>
                 <h4 className="mt-1 leading-[1.4] text-[21px]">
-                  <a href="#" className="hover:text-custom">
+                  <a href="#" className={`hover:text-custom ${isDark && "text-white"}`}>
                     How to be appreciated for your hard work as a developer
                   </a>
                 </h4>
@@ -104,7 +110,7 @@ export const Blogs = () => {
                   <a href="#">Social Media</a>
                 </p>
                 <h4 className="mt-1 leading-[1.4] text-[21px]">
-                  <a href="#" className="hover:text-custom">
+                  <a href="#" className={`hover:text-custom ${isDark && "text-white"}`}>
                     How designers and developers can collaborate better
                   </a>
                 </h4>

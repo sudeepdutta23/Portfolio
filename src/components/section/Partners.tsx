@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../GlobalThemeProvider";
 
 export const Partners = () => {
+  const { theme } = useContext(ThemeContext);
+  const basePath = `/assets/img/partners/${theme == "light" ? "dark" : "light"}`
   return (
     <section className="relative pb-8">
       <div className="container relative z-10">
@@ -15,14 +19,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/1.png"
+                src={`${basePath}/1.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/1.png"
+                src={`${basePath}/1.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -40,14 +44,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/2.png"
+                src={`${basePath}/2.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/2.png"
+                src={`${basePath}/2.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -65,14 +69,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/3.png"
+                src={`${basePath}/3.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/3.png"
+                src={`${basePath}/3.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -90,14 +94,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/4.png"
+                src={`${basePath}/4.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/4.png"
+                src={`${basePath}/4.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -114,14 +118,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/5.png"
+                src={`${basePath}/5.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/5.png"
+                src={`${basePath}/5.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -139,14 +143,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/6.png"
+                src={`${basePath}/6.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/6.png"
+                src={`${basePath}/6.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -164,14 +168,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/7.png"
+                src={`${basePath}/7.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/7.png"
+                src={`${basePath}/7.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}
@@ -189,14 +193,14 @@ export const Partners = () => {
               className="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center"
             >
               <Image
-                src="/assets/img/partners/dark/8.png"
+                src={`${basePath}/8.png`}
                 className="mx-auto max-w-[88%] dark:hidden"
                 alt=""
                 width={150}
                 height={150}
               />
               <Image
-                src="/assets/img/partners/light/8.png"
+                src={`${basePath}/8.png`}
                 className="mx-auto max-w-[88%] hidden dark:block"
                 alt=""
                 width={150}

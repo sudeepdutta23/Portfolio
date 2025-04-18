@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext, THEMES } from "../GlobalThemeProvider";
 
 export const Portfolio = () => {
+  const { theme } = useContext(ThemeContext);
+
+  const isDark = theme === THEMES.DARK;
+
   return (
     <section
       className="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px] relative"
@@ -13,10 +19,10 @@ export const Portfolio = () => {
             <p className="text-custom text-[20px] md:text-2xl font-medium font-secondary">
               Portfolio
             </p>
-            <h3 className="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">
+            <h3 className={`md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5 ${isDark && "text-white"}`}>
               My Amazing Works
             </h3>
-            <p className="text-muted dark:text-darkmuted text-lg leading-[30px]">
+            <p className={`text-muted dark:text-darkmuted text-lg leading-[30px] ${isDark && "text-white"}`}>
               Most common methods for designing websites that work well on
               desktop is responsive and adaptive design
             </p>
@@ -40,7 +46,7 @@ export const Portfolio = () => {
               <li className="shrink-0">
                 <a
                   href="#"
-                  className="hover:text-custom text-base duration-300"
+                  className={`${isDark && "text-white"} hover:text-custom text-base duration-300`}
                   data-filter=".youtube"
                 >
                   Youtube
@@ -49,7 +55,7 @@ export const Portfolio = () => {
               <li className="shrink-0">
                 <a
                   href="#"
-                  className="hover:text-custom text-base duration-300"
+                  className={`${isDark && "text-white"} hover:text-custom text-base duration-300`}
                   data-filter=".vimeo"
                 >
                   Vimeo
@@ -58,7 +64,7 @@ export const Portfolio = () => {
               <li className="shrink-0">
                 <a
                   href="#"
-                  className="hover:text-custom text-base duration-300"
+                  className={`${isDark && "text-white"} hover:text-custom text-base duration-300`}
                   data-filter=".soundcloud"
                 >
                   Soundcloud
@@ -67,7 +73,7 @@ export const Portfolio = () => {
               <li className="shrink-0">
                 <a
                   href="#"
-                  className="hover:text-custom text-base duration-300"
+                  className={`${isDark && "text-white"} hover:text-custom text-base duration-300`}
                   data-filter=".popup"
                 >
                   Popup
@@ -76,7 +82,7 @@ export const Portfolio = () => {
               <li className="shrink-0">
                 <a
                   href="#"
-                  className="hover:text-custom text-base duration-300"
+                  className={`${isDark && "text-white"} hover:text-custom text-base duration-300`}
                   data-filter=".detail"
                 >
                   Detail
