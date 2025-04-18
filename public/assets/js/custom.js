@@ -38,15 +38,20 @@ $(".main-img-box").each(function () {
         });
 });
 
+document.documentElement.setAttribute("theme","light");
+
 // Navbar sticky and active
 var navbar = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".mobile-nav ul li");
 window.onscroll = function () {
+    let themeClass = document.documentElement.getAttribute("theme")== "dark" ? "darkHeader" : "";
     if (window.pageYOffset > 80) {
         navbar.classList.add("stickyadd");
+        navbar.classList.add(themeClass);
     } else {
         navbar.classList.remove("stickyadd");
+        navbar.classList.remove("darkHeader");
     }
 
     var current = "";

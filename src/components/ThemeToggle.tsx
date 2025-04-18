@@ -16,10 +16,15 @@ const ThemeToggle = () => {
   }
 
   const handleThemeChange = () => {
+    const navbar = document.querySelector("nav");
     if(theme === 'light'){
       document.body.classList.add('dark_Theme');
+      document.documentElement.setAttribute("theme","dark");
+      navbar?.classList.add("darkHeader");
     }else{
       document.body.classList.remove('dark_Theme');
+      document.documentElement.setAttribute("theme","light");
+      navbar?.classList.remove("darkHeader");
     }
     setTheme({ type: TOGGLE_THEME });
   };

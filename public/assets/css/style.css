@@ -2625,6 +2625,14 @@ h1,
   background-image: url('../img/slider/2.jpg');
 }
 
+.light_logo{
+  background-image: url('../img/logo/sudeep_light_logo.png');
+}
+
+.dark_logo{
+  background-image: url('../img/logo/sudeep_dark_logo.png');
+}
+
 .dark .dark\:bg-\[url\(\'\.\.\/img\/testimonials\/bg-client-dark\.png\'\)\]{
   background-image: url('../img/testimonials/bg-client-dark.png');
 }
