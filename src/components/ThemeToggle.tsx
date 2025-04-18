@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { ThemeContext } from './GlobalThemeProvider';
+import { ThemeContext, TOGGLE_THEME } from './GlobalThemeProvider';
 
 const ThemeToggle = () => {
   const { setTheme, theme } = useContext(ThemeContext); // Corrected usage
@@ -21,7 +21,7 @@ const ThemeToggle = () => {
     }else{
       document.body.classList.remove('dark_Theme');
     }
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme({ type: TOGGLE_THEME });
   };
 
   return (

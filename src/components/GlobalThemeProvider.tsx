@@ -12,7 +12,7 @@ export const THEMES = {
 };
 
 export const TOGGLE_THEME = "TOGGLE_THEME";
-type Theme = "light" | "dark";
+export type Theme = "light" | "dark";
 
 interface ThemeState {
   theme: Theme;
