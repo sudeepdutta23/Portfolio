@@ -8,9 +8,7 @@ export const Header = () => {
 
   return (
     <div className="fixed top-0 w-full z-40">
-      <nav
-        className="py-[25px] relative ease-in-out duration-500 mobile-nav max-[768px]:shadow-[0px_0px_10px_rgb(0,0,0,0.1)] max-[768px]:py-[10px] max-[768px]:bg-white max-[768px]:dark:py-[20px] max-[768px]:dark:bg-semidark darkHeaderMobile"
-      >
+      <nav className="py-[25px] relative ease-in-out duration-500 mobile-nav max-[768px]:shadow-[0px_0px_10px_rgb(0,0,0,0.1)] max-[768px]:py-[10px] max-[768px]:bg-white max-[768px]:dark:py-[20px] max-[768px]:dark:bg-semidark darkHeaderMobile">
         <div className="container">
           <div className="flex items-center justify-between md:block">
             <div className="justify-between items-center flex w-full">
@@ -24,7 +22,8 @@ export const Header = () => {
                     alt=""
                   />
                 </a>
-              </div>              <div>
+              </div>{" "}
+              <div>
                 <button className="block md:hidden outline-none mobile-menu-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,62 +43,54 @@ export const Header = () => {
               </div>
               <div className="hidden md:block">
                 <ul className="list-none flex space-x-2 lg:space-x-[30px] items-center">
-                  <li className="home active">
+                  <li
+                    className={`${theme == "dark" && "text-white"} home active`}
+                  >
                     <a
                       href="#home"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       Home
                     </a>
                   </li>
-                  <li className="about">
+                  <li className={`${theme == "dark" && "text-white"} about`}>
                     <a
                       href="#about"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       About
                     </a>
                   </li>
-                  <li className="portfolio">
+                  <li
+                    className={`${theme == "dark" && "text-white"} portfolio`}
+                  >
                     <a
                       href="#portfolio"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       Portfolio
                     </a>
                   </li>
-                  <li className="service">
+                  <li className={`${theme == "dark" && "text-white"} service`}>
                     <a
                       href="#service"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       Service
                     </a>
                   </li>
-                  <li className="blog">
+                  <li className={`${theme == "dark" && "text-white"} blog`}>
                     <a
                       href="#blog"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       Blog
                     </a>
                   </li>
-                  <li className="contact">
+                  <li className={`${theme == "dark" && "text-white"} contact`}>
                     <a
                       href="#contact"
-                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2 ${
-                        theme == "dark" && "text-white"
-                      }`}
+                      className={`font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2`}
                     >
                       Contact
                     </a>

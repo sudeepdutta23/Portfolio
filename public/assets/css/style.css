@@ -2138,7 +2138,7 @@ h1,
 
 .mobile-nav ul li.active{
   --tw-text-opacity: 1;
-  color: rgb(247 80 35 / var(--tw-text-opacity));
+  color: rgb(247 80 35 / var(--tw-text-opacity)) !important;
 }
 
 /* Home */
