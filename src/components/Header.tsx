@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div className="fixed top-0 w-full z-40">
       <nav
-        className={`py-[25px] relative ease-in-out duration-500 mobile-nav max-[768px]:shadow-[0px_0px_10px_rgb(0,0,0,0.1)] max-[768px]:py-[10px] max-[768px]:bg-white max-[768px]:dark:py-[20px] max-[768px]:dark:bg-semidark`}
+        className="py-[25px] relative ease-in-out duration-500 mobile-nav max-[768px]:shadow-[0px_0px_10px_rgb(0,0,0,0.1)] max-[768px]:py-[10px] max-[768px]:bg-white max-[768px]:dark:py-[20px] max-[768px]:dark:bg-semidark darkHeaderMobile"
       >
         <div className="container">
           <div className="flex items-center justify-between md:block">
@@ -17,22 +17,14 @@ export const Header = () => {
               <div className="z-50 relative">
                 <a href="index.html">
                   <Image
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     src={`/assets/img/logo/sudeep_${theme}_logo.png`}
                     className="lg:max-w-[150px] max-w-[90px] dark:hidden"
                     alt=""
                   />
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/assets/img/logo/dark.png"
-                    className="lg:max-w-[150px] max-w-[90px] hidden dark:block"
-                    alt=""
-                  />
                 </a>
-              </div>
-              <div>
+              </div>              <div>
                 <button className="block md:hidden outline-none mobile-menu-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

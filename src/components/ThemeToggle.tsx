@@ -34,7 +34,7 @@ const ThemeToggle = () => {
       onClick={handleThemeChange}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-4 right-4 bg-background/80 backdrop-blur-md p-2 rounded-full shadow-lg z-50
+      className="fixed top-100 right-4 bg-background/80 backdrop-blur-md p-2 rounded-full shadow-lg z-50
                  border border-border/50 transition-all duration-300
                  hover:bg-background/90 hover:scale-105"
       aria-label="Toggle Theme"
